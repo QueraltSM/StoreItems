@@ -27,6 +27,10 @@ public class Articulo implements Comparable<Articulo> {
         return cantidad;
     }
 
+    public String toString(){
+        return nombre;
+    }
+
     public int compareTo(Articulo a){
         if (a.getNombre().compareTo(getNombre())<0) {
             return 1;
@@ -35,7 +39,5 @@ public class Articulo implements Comparable<Articulo> {
         }
         return -1;
     }
-
-
 
 }

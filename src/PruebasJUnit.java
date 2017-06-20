@@ -64,13 +64,5 @@ public class PruebasJUnit {
         assertFalse(a4 == t.busca(a4.getNombre()));
     }
 
-    @Test
-    public void vende() {
-        assertFalse(t.vende(a1.getNombre(), 3));
-        t.inserta(a2);
-        assertTrue(t.vende(a2.getNombre(), 3));
-        assertTrue(a2.getCantidad() == 0);
-    }
-
 
 }
